@@ -1,0 +1,8 @@
+#! /bin/bash
+
+g++ -c tetromino.cpp -o linker/tetromino.o 
+g++ -c main.cpp -o linker/main.o 
+g++ -c drawing.cpp -o linker/drawing.o 
+g++ -c board.cpp -o linker/board.o 
+g++ linker/main.o linker/tetromino.o linker/drawing.o linker/board.o -o linker/main -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network 
+./linker/main $1 $2

@@ -1,0 +1,54 @@
+Tetrominos: 
+    Matrix : Column = 10 Rows = 20 
+    7 shapes :
+        The "I" block
+        The "O" block
+        The "T" block
+        The "S" block
+        The "Z" block
+        The "J" block
+        The "L" block
+
+Collision detection 
+
+Rotate and lateral movement:
+
+    Symmetry in the 3*3 block 
+
+
+Scoring : 
+
+    1 line: 40 points
+    2 lines (double): 100 points
+    3 lines (triple): 300 points
+    4 lines (tetris): 1200 points
+
+Hold :
+	If it's the first time, you can hold at any point, from then on it's only when it appears that you can.
+
+Time speed acceleration :
+
+    exemple : speed may increase by 0.5 units for every 10 lines cleared.
+
+Additional:
+
+    Wall Kick:
+
+        Rotation when you collide with a wall to fit in and not go outside the matrix.
+        https://tetris.fandom.com/wiki/TGM_Rotation
+
+    Garbage : 
+
+        When a player clears two or more lines in a single turn, the number of lines cleared minus one will be sent to the opponent's grid as "garbage" blocks, making it harder for the opponent to clear lines and score points.
+
+
+    Additional scoring: 
+
+        T-spin single: 100 points
+        T-spin double: 200 points
+        T-spin triple: 800 points
+
+
+
+
+
